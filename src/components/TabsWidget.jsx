@@ -14,14 +14,15 @@ export default function TabsWidget() {
   };
 
   return (
-    <div className="relative bg-[#2b2e36]/80 backdrop-blur-xl rounded-3xl w-full min-h-[260px] pl-10 pr-10 pt-3 shadow-[0_8px_25px_rgba(0,0,0,0.45)] border border-white/10 transition-all duration-500">
+    <div className="relative bg-[#2b2e36]/80 backdrop-blur-xl rounded-3xl w-full min-h-[260px] px-8 pt-4 pb-5
+ shadow-[0_8px_25px_rgba(0,0,0,0.45)] border border-white/10 transition-all duration-500">
       {/* Help icon (top-left like Figma) */}
       <div className="absolute left-2 top-5">
         <HelpCircle className="w-5 h-5 text-gray-400/70" />
       </div>
 
       {/* Side grid icon */}
-      <div className="absolute left-3 top-32 flex flex-col gap-[2px]">
+      <div className="absolute left-2 top-32 flex flex-col gap-[2px]">
         {[0, 1, 2].map((row) => (
           <div key={row} className="flex gap-[2px]">
             {[0, 1].map((col) => (
@@ -110,9 +111,13 @@ export default function TabsWidget() {
       </style>
 
       {/* Content area */}
-      <div className="text-gray-300/90 text-[15px] leading-relaxed max-h-[150px] overflow-y-hidden">
-        {tabContent[activeTab]}
-      </div>
+      <div
+  key={activeTab}
+  className="text-gray-300/90 text-[15px] leading-relaxed max-h-[150px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-600/30 scrollbar-track-transparent pr-2 transition-opacity duration-300 ease-in-out"
+>
+  {tabContent[activeTab]}
+</div>
+
     </div>
   );
 }

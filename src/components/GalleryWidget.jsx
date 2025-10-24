@@ -51,13 +51,14 @@ export default function GalleryWidget() {
 
       {/* Header */}
       <div className="flex justify-between items-center mb-4">
-        <h3 className="text-white font-semibold text-sm bg-[#1f2126] py-2 px-5 rounded-lg shadow-inner">
+        <h3 className="text-white font-semibold text-sm bg-gradient-to-b from-[#1b1f2b] to-[#111318] py-2 px-5 rounded-lg shadow-[inset_0_2px_4px_rgba(0,0,0,0.5)] transition-all duration-200 hover:from-[#1e2230] hover:to-[#14151b]">
           Gallery
         </h3>
 
+
         <div className="flex items-center gap-3">
           {/* Add Image Button */}
-          <label className="flex items-center gap-2 bg-[#1f2126] hover:bg-[#3a3f46] text-white text-sm font-medium py-2 px-4 rounded-lg shadow-md cursor-pointer transition-all duration-200">
+          <label className="flex items-center gap-2 bg-gradient-to-b from-[#1b1f2b] to-[#111318] hover:from-[#1e2230] hover:to-[#14151b] text-white text-sm font-medium py-2 px-4 rounded-lg shadow-[0_2px_4px_rgba(0,0,0,1),0_10px_20px_rgba(0,0,0,0.4)] cursor-pointer transition-all duration-200">
             <Plus className="w-4 h-4" /> Add Image
             <input
               type="file"
@@ -67,19 +68,23 @@ export default function GalleryWidget() {
             />
           </label>
 
+
           {/* Arrow Buttons */}
           <button
             onClick={scrollLeft}
-            className="bg-[#1f2126] hover:bg-[#3a3f46] p-2 rounded-full shadow-md"
+            className="p-3 rounded-full bg-gradient-to-b from-[#1b1f2b] to-[#111318] shadow-[0_2px_4px_rgba(0,0,0,1),0_10px_20px_rgba(0,0,0,0.4)] border border-gray-900 hover:from-[#1e2230] hover:to-[#14151b] transition-all"
           >
-            <ArrowLeft className="w-4 h-4 text-gray-300" />
+            <ArrowLeft className="w-3 h-3 text-white" />
           </button>
+
           <button
             onClick={scrollRight}
-            className="bg-[#1f2126] hover:bg-[#3a3f46] p-2 rounded-full shadow-md"
+            className="p-3 rounded-full bg-gradient-to-b from-[#1b1f2b] to-[#111318] shadow-[0_2px_4px_rgba(0,0,0,1),0_10px_20px_rgba(0,0,0,0.4)] border border-gray-900 hover:from-[#1e2230] hover:to-[#14151b] transition-all"
           >
-            <ArrowRight className="w-4 h-4 text-gray-300" />
+            <ArrowRight className="w-3 h-3 text-white" />
           </button>
+
+
         </div>
       </div>
 

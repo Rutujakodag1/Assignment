@@ -12,6 +12,26 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+.hover-bg {
+  background: linear-gradient(to right, rgba(156,163,175,0.15), rgba(107,114,128,0.35), rgba(58,63,70,0.85));
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 0.5rem;
+}
+.active-tab {
+  box-shadow: 0 0 12px rgba(255,255,255,0.1);
+  background: linear-gradient(to bottom, #2e323a, #23262c);
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientShift 5s ease infinite;
+}
 
 /* :root {
   font-family: "InterVariable", system-ui, Avenir, Helvetica, Arial, sans-serif;

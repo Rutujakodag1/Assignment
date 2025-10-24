@@ -32,7 +32,7 @@ export default function TabsWidget() {
       </div>
 
       {/* Tabs */}
-      <div className="flex mb-4 bg-[#111216]/90 rounded-2xl p-2 px-3 relative overflow-hidden gap-x-3 shadow-[inset_0_1px_3px_rgba(255,255,255,0.08),0_6px_12px_-3px_rgba(0,0,0,0.6)]">
+      <div className="flex mb-4 bg-gradient-to-b from-[#1b1f2b]/90 to-[#111318]/90 rounded-2xl p-2 px-3 relative overflow-hidden gap-x-3 shadow-[inset_0_1px_3px_rgba(255,255,255,0.08),0_6px_12px_-3px_rgba(0,0,0,0.6)] transition-all duration-200 hover:from-[#1e2230]/90 hover:to-[#14151b]/90">
         {/* Active tab background slider */}
         <div
           className="absolute top-[8px] bottom-[8px] bg-[#2e323a] rounded-xl shadow-[0_3px_8px_rgba(0,0,0,0.5),inset_0_2px_6px_rgba(255,255,255,0.08)] transition-all duration-500 ease-in-out"
@@ -72,7 +72,7 @@ export default function TabsWidget() {
         transition-all duration-300 ease-in-out rounded-lg
         ${isActive ? "text-white" : "text-gray-400 hover:text-white"}`}
             >
-              {/* Hover animation background (for inactive tabs) */}
+              {/* Hover animation background */}
               {!isActive && (
                 <span
                   className="hover-bg absolute inset-0 bg-gradient-to-r 
@@ -89,26 +89,25 @@ export default function TabsWidget() {
 
       <style>
         {`
-@keyframes slideRight {
-  0% { transform: translateX(-100%); opacity: 0.25; }
-  100% { transform: translateX(0%); opacity: 0.5; }
-}
+          @keyframes slideRight {
+            0% { transform: translateX(-100%); opacity: 0.25; }
+            100% { transform: translateX(0%); opacity: 0.5; }
+          }
 
-@keyframes slideLeft {
-  0% { transform: translateX(0%); opacity: 0.5; }
-  100% { transform: translateX(-100%); opacity: 0.25; }
-}
+          @keyframes slideLeft {
+            0% { transform: translateX(0%); opacity: 0.5; }
+            100% { transform: translateX(-100%); opacity: 0.25; }
+          }
 
-.animate-slide-right {
-  animation: slideRight 0.4s ease-in-out forwards;
-}
+          .animate-slide-right {
+            animation: slideRight 0.4s ease-in-out forwards;
+          }
 
-.animate-slide-left {
-  animation: slideLeft 0.4s ease-in-out forwards;
-}
-`}
+          .animate-slide-left {
+            animation: slideLeft 0.4s ease-in-out forwards;
+          }
+        `}
       </style>
-
 
       {/* Content area */}
       <div className="text-gray-300/90 text-[15px] leading-relaxed max-h-[150px] overflow-y-hidden">

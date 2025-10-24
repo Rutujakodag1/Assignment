@@ -14,7 +14,7 @@ export default function TabsWidget() {
   };
 
   return (
-    <div className="relative bg-[#2b2e36]/80 backdrop-blur-xl rounded-3xl w-full min-h-[260px] px-8 pt-4 pb-5
+    <div className="relative bg-[#2b2e36]/80 backdrop-blur-xl rounded-3xl w-full min-h-[260px] px-10 pt-4 pb-5
  shadow-[0_8px_25px_rgba(0,0,0,0.45)] border border-white/10 transition-all duration-500">
       {/* Help icon (top-left like Figma) */}
       <div className="absolute left-2 top-5">

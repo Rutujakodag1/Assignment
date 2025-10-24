@@ -5,6 +5,14 @@
 @import "@fontsource/plus-jakarta-sans/400.css"; /* regular */
 @import "@fontsource/plus-jakarta-sans/500.css"; /* medium if needed */
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 /* :root {
   font-family: "InterVariable", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

@@ -14,14 +14,14 @@ export default function TabsWidget() {
   };
 
   return (
-    <div className="relative bg-[#2b2e36]/80 backdrop-blur-xl rounded-3xl w-full min-h-[260px] p-10 pt-3 shadow-[0_8px_25px_rgba(0,0,0,0.45)] border border-white/10 transition-all duration-500">
+    <div className="relative bg-[#2b2e36]/80 backdrop-blur-xl rounded-3xl w-full min-h-[260px] pl-10 pr-10 pt-3 shadow-[0_8px_25px_rgba(0,0,0,0.45)] border border-white/10 transition-all duration-500">
       {/* Help icon (top-left like Figma) */}
       <div className="absolute left-2 top-5">
         <HelpCircle className="w-5 h-5 text-gray-400/70" />
       </div>
 
       {/* Side grid icon */}
-      <div className="absolute left-3 top-30 flex flex-col gap-[2px]">
+      <div className="absolute left-3 top-32 flex flex-col gap-[2px]">
         {[0, 1, 2].map((row) => (
           <div key={row} className="flex gap-[2px]">
             {[0, 1].map((col) => (
@@ -32,7 +32,7 @@ export default function TabsWidget() {
       </div>
 
       {/* Tabs */}
-      <div className="flex mb-4 bg-[#111216]/90 rounded-2xl p-2 px-3 relative overflow-hidden gap-x-4 shadow-[inset_0_1px_3px_rgba(255,255,255,0.08),0_6px_12px_-3px_rgba(0,0,0,0.6)]">
+      <div className="flex mb-4 bg-[#111216]/90 rounded-2xl p-2 px-3 relative overflow-hidden gap-x-3 shadow-[inset_0_1px_3px_rgba(255,255,255,0.08),0_6px_12px_-3px_rgba(0,0,0,0.6)]">
         {/* Active tab background slider */}
         <div
           className="absolute top-[8px] bottom-[8px] bg-[#2e323a] rounded-xl shadow-[0_3px_8px_rgba(0,0,0,0.5),inset_0_2px_6px_rgba(255,255,255,0.08)] transition-all duration-500 ease-in-out"
@@ -111,7 +111,7 @@ export default function TabsWidget() {
 
 
       {/* Content area */}
-      <div className="text-gray-300/90 text-[15px] leading-relaxed max-h-[150px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
+      <div className="text-gray-300/90 text-[15px] leading-relaxed max-h-[150px] overflow-y-hidden">
         {tabContent[activeTab]}
       </div>
     </div>

@@ -13,13 +13,13 @@ export default function App() {
           <TabsWidget />
         </div>
 
-        <div className="w-full h-[1.5px] bg-gradient-to-b from-[#2a2e3c] to-[#1b1f28] rounded-md shadow-inner border-t border-gray-500 border-b border-gray-800"></div>
+        <div className="w-[90%] h-[1.5px] mx-auto bg-gradient-to-b from-[#2a2e3c] to-[#1b1f28] rounded-md shadow-inner border-t border-gray-500 border-b border-gray-800"></div>
 
         <div className="w-full max-w-[550px]">
           <GalleryWidget />
         </div>
 
-        <div className="w-full h-[1.5px] bg-gradient-to-b from-[#2a2e3c] to-[#1b1f28] rounded-md shadow-inner border-t border-gray-500 border-b border-gray-800"></div>
+        <div className="w-[90%]  mx-auto h-[1.5px] bg-gradient-to-b from-[#2a2e3c] to-[#1b1f28] rounded-md shadow-inner border-t border-gray-500 border-b border-gray-800"></div>
       </div>
     </div>
   );

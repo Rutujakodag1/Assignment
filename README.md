@@ -103,8 +103,3 @@ Front-End Developer | React & UI Enthusiast
 🔗 Portfolio: [[https://rutuja-kodag.vercel.app/](https://rutuja-kodag.vercel.app/)]
 
 ---
-
-> **Note:** This project was developed strictly following the official Figma assignment instructions.  
-> All padding, alignment, shadows, and interactions were matched to the prototype preview.
-
----
